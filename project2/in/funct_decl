@@ -1,0 +1,43 @@
+#pragma source off
+#pragma token off
+
+int func5();
+bool func1(int x, int y[2][8], string z);
+string func2(bool a);
+void func3();
+void func4(double b);
+
+int id;
+int id1, id2, id3, id4;
+int ida1[213][1343], ida2[134][2][12], ida3[1][2][3];
+int ide1 = 1 + 2, ide2 = 3 + 5;
+int idai1[1][1][1] = { 3+5, 3+2, 4+22 };
+
+const int a = 1;
+const int a = 1, b = 2, c = 3;
+const string a = "abc", b = "asdfa";
+const bool a = 0, b = 1;
+const float a = 0.123, b = 1.134;
+const int a = 1e8, b = 3e9;
+
+int main(){
+    int id;
+    int id1, id2, id3, id4;
+    int ida1[213][1343], ida2[134][2][12], ida3[1][2][3];
+    int ide1 = 1 + 2, ide2 = 3 + 5;
+    int idai1[1][1][1] = { 3+5, 3+2, 4+22 };
+
+    const int a = 1;
+    const int a = 1, b = 2, c = 3;
+    const string a = "abc", b = "asdfa";
+    const bool a = 0, b = 1;
+    const float a = 0.123, b = 1.134;
+    const int a = 1e8, b = 3e9;
+
+    id = 1 + 1;
+    id2 = 2 + 3;
+    abc[1 + 2][2 + 3][3 + 4] = 3 + 5;
+    print a;
+    print 2 + 4;
+    read a;
+}
