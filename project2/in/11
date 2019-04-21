@@ -1,0 +1,14 @@
+#pragma source off
+#pragma token off
+#pragma statistic off
+
+int main() {
+
+   f(1 + 2 + 3 + 4 + 5 + 6 + 7 + 0 + f(f(f(f(f(f(1+f())))))) + asdasd + q[2][3]);
+}
+
+int w();
+void qq(){
+    f(1 + 2 + 3 + 4 + 5 + 6 + 7 + 0 + f(f(f(f(w()>f(f(1+f())))))) + asdasd + q[2][3]);
+    zfff = f(a[12>123>44<=123||111||f(w[sqrt(3333)]+123e9+w[1.32<=22&&33][11%q()])]);
+}

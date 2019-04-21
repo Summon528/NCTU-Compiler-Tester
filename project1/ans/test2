@@ -1,0 +1,71 @@
+1:/* print the world */
+
+<kw:void>
+<id:main>
+<delim:(>
+<delim:)>
+<delim:{>
+2:void main(){
+
+<kw:int>
+<id:a>
+<delim:;>
+3:  int a;
+
+<kw:double>
+<id:b>
+<delim:;>
+4:  double b;
+
+<kw:print>
+<string:hello world>
+<delim:;>
+5:  print "hello world";
+
+<id:a>
+<op:=>
+<int:1>
+<op:+>
+<int:1>
+<delim:;>
+6:  a = 1+1;
+
+<id:b>
+<op:=>
+<float:1.23>
+<delim:;>
+7:  b = 1.23;
+
+<kw:if>
+<delim:(>
+<id:a>
+<op:>>
+<int:1>
+<delim:)>
+<delim:{>
+8:  if (a > 1){
+
+<id:b>
+<op:=>
+<id:b>
+<op:*>
+<sci:1.23e-1>
+<delim:;>
+9:    b = b*1.23e-1;
+
+<delim:}>
+10:  }
+
+<delim:}>
+11:}
+
+12:
+
+13:/* Oh my
+
+14:dog */
+
+frequencies of identifiers:
+main	1
+a	3
+b	4

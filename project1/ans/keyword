@@ -1,0 +1,42 @@
+1:// pattern name: keyword
+
+2:#pragma statistic off
+
+<kw:do>
+3:do
+
+<kw:boolean>
+<kw:double>
+4:boolean double
+
+<kw:else>
+<kw:float>
+5:else float 
+
+<kw:false>
+<kw:for>
+<kw:int>
+6:false for int
+
+<kw:if>
+<kw:void>
+7:if void
+
+<kw:print>
+<kw:read>
+<kw:string>
+8:print read string 
+
+<kw:true>
+9:true
+
+<kw:return>
+<kw:break>
+<kw:continue>
+10:return break continue
+
+<kw:while>
+11:while
+
+12:
+

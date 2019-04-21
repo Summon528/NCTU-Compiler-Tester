@@ -1,0 +1,11 @@
+#pragma source off
+#pragma token off
+#pragma statistic off
+int q[123333][1] ={123};
+void qweqwe(int w);
+void asd () {}
+int main() {
+    c=a+b;
+    int a = --c;
+    int q = ++b;
+}

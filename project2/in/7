@@ -1,0 +1,14 @@
+#pragma source off
+#pragma token off
+#pragma statistic off
+bool func1(int x, int y[2][8], string z);
+string func2(bool a);
+void func3();
+void func4(double b);
+int func5();
+
+
+int main(){}
+
+int f();
+string func123(int a, int z[1][5][1231][12.33]);

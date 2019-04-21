@@ -1,0 +1,12 @@
+#pragma source off
+#pragma token off
+#pragma statistic off
+
+int a() {
+    for (i[2] = f(), i = 3, 5 + 1; i + i + 2, i < 2 + 1; i = i + 1) {
+        for (i[2] = f(), i = 3, 5 + 1; i + i + 2, i < 2 + 1; i = i + 1) {
+            for (i[2] = f(), i = 3, 5 + 1; i + i + 2, i < 2 + 1; i = i + 1) {
+    }
+    }
+    };
+}

@@ -1,0 +1,10 @@
+#pragma source off
+#pragma token off
+#pragma statistic off
+
+int main() {
+    return q(w[123]) || 1 || 2 < 3 >= 1 < 1 && w;
+    break;
+    continue;
+    return;
+}

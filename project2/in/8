@@ -1,0 +1,8 @@
+#pragma source off
+#pragma token off
+#pragma statistic off
+int main() {
+    int a = c+f()+0, b[231][123] = {8}, c, d = --1, f, a[0]={};
+    const int  a = "123", b = 3.123, c = 1e9, d = true, f = false;
+    const int  a = 123 + 123;
+}

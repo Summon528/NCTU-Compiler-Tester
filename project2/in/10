@@ -1,0 +1,9 @@
+#pragma source off
+#pragma token off
+#pragma statistic off
+
+int main() {
+    print !1 + w + q[2] * 111 + 0 ;
+    read w[1][2][3][4][5];
+    read w[0] + 2;
+}

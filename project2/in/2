@@ -1,0 +1,8 @@
+#pragma source off
+#pragma token off
+#pragma statistic off
+
+int b() {
+    int f = q(!0 + 0);
+    int q = 0 + !0;
+}

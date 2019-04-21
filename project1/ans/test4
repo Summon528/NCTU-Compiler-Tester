@@ -1,0 +1,111 @@
+<kw:void>
+<id:main>
+<delim:(>
+<delim:)>
+<delim:{>
+1:void main(){
+
+<kw:int>
+<id:a>
+<delim:;>
+2:int a;
+
+<kw:double>
+<id:b>
+<delim:;>
+5:#pragma    source        on
+
+<kw:string>
+<id:v>
+<op:=>
+<string:hello world>
+<delim:;>
+6:   string v = "hello world";
+
+7:   //#pragma token off //asds"a saad/* "" 
+
+8:#pragma   statistic off
+
+<id:a>
+<op:=>
+<int:1>
+<op:+>
+<int:1>
+<delim:;>
+9:   a = 1+1;
+
+10:#pragma   statistic on
+
+11:#pragma token on //asdsa saad/* "" 
+
+<id:b>
+<op:=>
+<float:1.23>
+<delim:;>
+12:   b = 1.23;
+
+<kw:if>
+<delim:(>
+<id:a>
+<op:>>
+<int:1>
+<delim:)>
+13:   if (a > 1)   
+
+<delim:{>
+14:   {
+
+<id:b>
+<op:=>
+<id:b>
+<op:*>
+<sci:1.23e-1>
+<delim:;>
+15:      b = b*1.23e-1;
+
+16:#pragma   token off   /* as 
+
+17:s * /
+
+18:// sas
+
+19:"*/
+
+20:      a = a+a;
+
+21:   }
+
+22:#pragma   token on
+
+<delim:}>
+23:}  // saskodpsa . s2e)@@#
+
+24:/* sads
+
+25:asd
+
+26:
+
+27:sd
+
+28:sadas
+
+29:*/
+
+<kw:double>
+<id:aaaa>
+<delim:;>
+30:double  aaaa;
+
+<kw:int>
+<id:aa>
+<delim:;>
+31:int aa;
+
+frequencies of identifiers:
+main	1
+a	5
+b	4
+v	1
+aaaa	1
+aa	1

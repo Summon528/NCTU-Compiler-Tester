@@ -1,0 +1,85 @@
+<kw:void>
+<id:main>
+<delim:(>
+<delim:)>
+1:void main() 
+
+<delim:{>
+2:{    
+
+<kw:int>
+<id:a>
+<delim:;>
+3:   int a;
+
+4:#pragma source on/*123*///45646 
+
+<kw:double>
+<id:b>
+<delim:;>
+5:   double b;
+
+6:#pragma    source        on
+
+<kw:string>
+<id:v>
+<op:=>
+<string:hello world>
+<delim:;>
+7:   string v = "hello world";
+
+8:   //123
+
+9:   //#pragma token off //asds"a saad/* "" }
+
+10:
+
+11:#pragma   statistic off// i am busy
+
+12:#pragma token on //asdsa saad/* "" 
+
+<id:b>
+<op:=>
+<float:1.23>
+<delim:;>
+13:   b = 1.23;
+
+<kw:if>
+<delim:(>
+<id:a>
+<op:>>
+<int:1>
+<delim:)>
+14:   if (a > 1)   
+
+<delim:{>
+15:   {
+
+<id:b>
+<op:=>
+<id:b>
+<op:*>
+<sci:1.23e-1>
+<delim:;>
+16:      b = b*1.23e-1;
+
+17:#pragma   token off   /* as 
+
+18:s * /
+
+19:// sas
+
+20:"*/int a = 4;
+
+21:	a = a+a;
+
+22:	}
+
+23:    printf("%d:%s\n", linenum, buf);
+
+24:  ++linenum;
+
+25:  buf[0] = "\0";
+
+26:
+

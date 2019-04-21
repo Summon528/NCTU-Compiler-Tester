@@ -1,0 +1,161 @@
+1:#pragma    statistic on 
+
+2:#pragma token on /* 7786451646 */
+
+3:#pragma source on  // 54654654654654654 
+
+4:#pragma token on/*                    fdfsdf*/
+
+<kw:for>
+5:for
+
+<kw:while>
+6:while
+
+<kw:do>
+<kw:if>
+<kw:else>
+<kw:true>
+<kw:false>
+<kw:for>
+<kw:int>
+<kw:print>
+<kw:const>
+<kw:read>
+<kw:boolean>
+7:do if else true false for int print const read boolean
+
+<kw:bool>
+<kw:void>
+<kw:float>
+<kw:double>
+<kw:string>
+<kw:continue>
+<kw:break>
+<kw:return>
+8:bool void float double string continue break return
+
+<kw:while>
+9:while
+
+<delim:,>
+<delim:;>
+<delim:(>
+<delim:)>
+<delim:{>
+<delim:}>
+<delim:[>
+<delim:]>
+<delim:]>
+<delim:[>
+<delim:]>
+10:,;(){}[]][]
+
+<op:+>
+<op:->
+<op:*>
+<op:/>
+<op:%>
+<op:=>
+<op:<>
+<op:<=>
+<op:!=>
+<op:>=>
+<op:>=>
+<op:=>
+<op:&&>
+<op:||>
+<op:!>
+11:+-*/%=<<=!=>=>==&&||!
+
+<op:>>
+<op:>=>
+12:>>=
+
+<float:2.11>
+13: 2.11
+
+<float:3.11>
+14: 3.11
+
+<float:23.23>
+15: 23.23
+
+<float:00000120.011011010>
+16: 00000120.011011010
+
+<float:0.0>
+17: 0.0
+
+18:
+
+<sci:41E2>
+<sci:32E1>
+19:41E2 32E1
+
+20:
+
+<sci:01.21E+4>
+<sci:11.11E-4>
+<int:0>
+<int:0>
+<int:0>
+<int:0>
+<int:0>
+<int:2>
+21:01.21E+4 11.11E-4 000002 
+
+<sci:123E04>
+22:123E04
+
+<op:->
+<sci:01.23E-04>
+23:-01.23E-04
+
+24:
+
+<string:Stirng>
+25:"Stirng"
+
+<string:">
+26:"\""
+
+27:
+
+28:
+
+<string:abc \ " \a>
+29:"abc \ \" \a"
+
+30:
+
+<id:fooer>
+31:fooer
+
+<id:fooer>
+32:fooer
+
+<id:maini>
+33:maini
+
+34:
+
+<id:ufufuf>
+35:ufufuf
+
+36:
+
+<id:fsdfsdfdsi>
+37:fsdfsdfdsi
+
+38:
+
+39:
+
+40:#pragma source on ////////
+
+frequencies of identifiers:
+fooer	2
+maini	1
+ufufuf	1
+fsdfsdfdsi	1
