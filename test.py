@@ -51,9 +51,11 @@ def check_ans_project1(ans_str, out_str):
     out_error_line = out_match.group(1) if out_match else -1
     ans_desc = "no lexical error" if ans_error_line == -1 else f"error at line {ans_error_line}"
     out_desc = "no lexical error" if out_error_line == -1 else f"error at line {out_error_line}"
-    if ans_error_line == out_error_line:
+    if ans_str == out_str or (ans_error_line != -1 and ans_error_line == out_error_line):
         return (True, None)
     else:
+        if ans_error_line == -1 and out_error_line == -1:
+            return (False, "no lexical error but output is incorrect")
         return (False, f'expected "{ans_desc}" but got "{out_desc}" instead')
 
 
