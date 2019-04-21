@@ -2,6 +2,15 @@
 A simpler tester specifically for NCTU compiler course (2019 Spring)
 
 ### Usage
+```
+usage: test.py [-h] project_num [executable_path]
+
+positional arguments:
+  project_num      int type, specify which project to test
+  executable_path  str type, path to your excutable. If not specify, the
+                   script will download missing answers without testing
+                   anything
+```
 #### Folder structure
 ```
 - project*

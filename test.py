@@ -6,8 +6,19 @@ import difflib
 from argparse import ArgumentParser
 
 parser = ArgumentParser()
-parser.add_argument("project_num")
-parser.add_argument("executable_path")
+parser.add_argument("project_num",
+                    type=int,
+                    help="int type, specify which project to test")
+
+parser.add_argument("executable_path",
+                    nargs="?",
+                    help="""
+                        str type,
+                        path to your excutable. 
+                        If not specify, the script will download missing
+                        answers without testing anything
+                    """)
+
 args = parser.parse_args()
 project_str = f"project{args.project_num}"
 
@@ -51,7 +62,8 @@ def check_ans_project1(ans_str, out_str):
     out_error_line = out_match.group(1) if out_match else -1
     ans_desc = "no lexical error" if ans_error_line == -1 else f"error at line {ans_error_line}"
     out_desc = "no lexical error" if out_error_line == -1 else f"error at line {out_error_line}"
-    if ans_str == out_str or (ans_error_line != -1 and ans_error_line == out_error_line):
+    if ans_str == out_str or (ans_error_line != -1
+                              and ans_error_line == out_error_line):
         return (True, None)
     else:
         if ans_error_line == -1 and out_error_line == -1:
@@ -106,4 +118,5 @@ def test():
 
 if __name__ == "__main__":
     get_ans(args.project_num)
-    test()
+    if args.executable_path is not None:
+        test()
