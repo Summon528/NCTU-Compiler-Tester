@@ -49,10 +49,12 @@ def check_ans_project1(ans_str, out_str):
     out_match = re.search(r"Error at line (\d*)", out_str)
     ans_error_line = ans_match.group(1) if ans_match else -1
     out_error_line = out_match.group(1) if out_match else -1
+    ans_desc = "no lexical error" if ans_error_line == -1 else f"error at line {ans_error_line}"
+    out_desc = "no lexical error" if out_error_line == -1 else f"error at line {out_error_line}"
     if ans_error_line == out_error_line:
-        return True
+        return (True, None)
     else:
-        return False
+        return (False, f'expected "{ans_desc}" but got "{out_desc}" instead')
 
 
 def check_ans_project2(ans_str, out_str):
@@ -60,10 +62,12 @@ def check_ans_project2(ans_str, out_str):
     out_match = re.search(r"Error found in Line #(\d*)", out_str)
     ans_error_line = ans_match.group(1) if ans_match else -1
     out_error_line = out_match.group(1) if out_match else -1
+    ans_desc = "no syntactic error" if ans_error_line == -1 else f"error found in line {ans_error_line}"
+    out_desc = "no syntactic error" if out_error_line == -1 else f"error found in line {out_error_line}"
     if ans_error_line == out_error_line:
-        return True
+        return (True, None)
     else:
-        return False
+        return (False, f'expected "{ans_desc}" but got "{out_desc}" instead')
 
 
 def test():
@@ -78,17 +82,17 @@ def test():
             f.write(out_str)
         with open(os.path.join(ans_dir, file)) as f:
             ans_str = f.read()
-            if globals()[f"check_ans_{project_str}"](ans_str, out_str):
-                print("\033[92mAC\033[0m")
+            status, msg = globals()[f"check_ans_{project_str}"](ans_str, out_str)
+            if status:
+                print(f"\033[92mAC{f': {msg}' if msg else ''}\033[0m")
                 ac += 1
             else:
-                print(f"\033[91mWA\033[0m")
+                print(f"\033[91mWA{f': {msg}' if msg else ''}\033[0m")
                 print("\033[93m", end="")
                 print(''.join(
                     difflib.unified_diff(
                         ans_str.splitlines(True),
                         out_str.splitlines(True),
-                        n=0,
                         fromfile="answer",
                         tofile="output",
                     )),
