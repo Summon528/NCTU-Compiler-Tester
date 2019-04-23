@@ -91,7 +91,8 @@ def test():
         print(file, end="\t")
         r = subprocess.run([args.executable_path,
                             os.path.join(in_dir, file)],
-                           capture_output=True)
+                            stdout=subprocess.PIPE,
+                            stderr=subprocess.PIPE)
         out_str = r.stdout.decode() + r.stderr.decode()
         with open(os.path.join(out_dir, file), "w") as f:
             f.write(out_str)
