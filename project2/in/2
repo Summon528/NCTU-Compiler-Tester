@@ -3,6 +3,8 @@
 #pragma statistic off
 
 int b() {
+    bool j = (-(!(---((!!(!-(--0)))))));
     int f = q(!0 + 0);
+    int w = 0 + (!!!!0||!0);
     int q = 0 + !0;
 }

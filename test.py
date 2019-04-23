@@ -78,7 +78,8 @@ def check_ans_project2(ans_str, out_str):
     out_error_line = out_match.group(1) if out_match else -1
     ans_desc = "no syntactic error" if ans_error_line == -1 else f"error found in line {ans_error_line}"
     out_desc = "no syntactic error" if out_error_line == -1 else f"error found in line {out_error_line}"
-    if ans_error_line == out_error_line:
+    if ans_str == out_str or (ans_error_line != -1
+                              and ans_error_line == out_error_line):
         return (True, None)
     else:
         return (False, f'expected "{ans_desc}" but got "{out_desc}" instead')

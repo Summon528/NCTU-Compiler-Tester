@@ -1,0 +1,12 @@
+#pragma source off
+#pragma token off
+#pragma statistic off
+int main() {
+    const int a = 3;
+    const int b = -3;
+    const int c = --"3";
+    const int c = --true;
+    const int d = ---3;
+    int a[32] = {};
+    int a[-2] = {};
+}
