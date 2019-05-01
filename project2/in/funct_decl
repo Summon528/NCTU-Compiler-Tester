@@ -1,5 +1,6 @@
 #pragma source off
 #pragma token off
+#pragma statistic off
 
 int func5();
 bool func1(int x, int y[2][8], string z);
