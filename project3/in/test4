@@ -1,0 +1,52 @@
+#pragma symbol on
+#pragma token off
+#pragma source off
+#pragma statistic off
+
+int a, a, b[1][2][3][4][5] = {}, c = 3, d[3][8], c;
+void main(int a, double b[1][6]);
+int b() {
+    double da, c, db = 3.3, dd[8][8] = {12.3, 3}, dg[1][2];
+    {
+        {
+            bool dg = true, kk = false, bbb, baa[8][2][3][55], bbbb[1] = {true, true};
+            double dg, kk;
+            if (1) {
+                float ff, db, ff[1][8] = {22}, ff[10000];
+            } else {
+                string s[88][1] = {}, s = "!23123", s2 = "123", sss[11];
+                do {
+                    const int cia = 100, cib = 87, s2 = 3, bbbb = 5;
+                } while(1);
+            }
+        }
+        {{{{{{do{{if(1){while(1){{}}}else{for(;;){}}}}while(1);}}}}}}
+        const int aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa = 9898; // 32個a
+        const int aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa = 9898; // 33個a
+        
+    }
+    const string cis = "123123", cis2 = "123stringstring", s2 = "qwe", dg = "444";
+    const float cff = 1e3, cff2 = 2e-3, s2 = 3.1, s87 = 1.2;
+}
+int b();
+double zzz(int a[1][2], double b, float c[12][34], bool bbbbb[1][2][3][4][5], string s);
+double zzz(int a[1][2], double b, float c[12][34], bool bbbbb[1][2][3][4][5], string s) {
+    const string s = "87";
+    const bool c = true, s87 = false, cff2 = true;
+    print "good";
+}
+void main() {
+    float main;
+    bool main;
+}
+bool cgggg(string asdad[87][88]) {
+    const string pp = "123sdfkjlcxvm,";
+}
+int cgggg = 8;
+
+int testting(int x, string q){
+}
+const double dddd = 8.8;
+void ddd(int x) {
+    return;
+}

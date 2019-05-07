@@ -1,0 +1,100 @@
+########## Error at Line#6: symbol a is redeclared ##########
+########## Error at Line#6: symbol c is redeclared ##########
+########## Error at Line#8: symbol b is redeclared ##########
+########## Error at Line#13: symbol dg is redeclared ##########
+########## Error at Line#13: symbol kk is redeclared ##########
+########## Error at Line#15: symbol ff is redeclared ##########
+########## Error at Line#15: symbol ff is redeclared ##########
+=======================================================================================
+Name                             Kind       Level       Type               Attribute   
+---------------------------------------------------------------------------------------
+ff                               variable   4(local)    float              
+db                               variable   4(local)    float              
+=======================================================================================
+########## Error at Line#17: symbol s is redeclared ##########
+=======================================================================================
+Name                             Kind       Level       Type               Attribute   
+---------------------------------------------------------------------------------------
+cia                              constant   5(local)    int                100
+cib                              constant   5(local)    int                87
+s2                               constant   5(local)    int                3
+bbbb                             constant   5(local)    int                5
+=======================================================================================
+=======================================================================================
+Name                             Kind       Level       Type               Attribute   
+---------------------------------------------------------------------------------------
+s                                variable   4(local)    string[88][1]      
+s2                               variable   4(local)    string             
+sss                              variable   4(local)    string[11]         
+=======================================================================================
+=======================================================================================
+Name                             Kind       Level       Type               Attribute   
+---------------------------------------------------------------------------------------
+dg                               variable   3(local)    bool               
+kk                               variable   3(local)    bool               
+bbb                              variable   3(local)    bool               
+baa                              variable   3(local)    bool[8][2][3][55]  
+bbbb                             variable   3(local)    bool[1]            
+=======================================================================================
+########## Error at Line#25: symbol aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa is redeclared ##########
+=======================================================================================
+Name                             Kind       Level       Type               Attribute   
+---------------------------------------------------------------------------------------
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa constant   2(local)    int                9898
+=======================================================================================
+########## Error at Line#28: symbol dg is redeclared ##########
+########## Error at Line#29: symbol s2 is redeclared ##########
+=======================================================================================
+Name                             Kind       Level       Type               Attribute   
+---------------------------------------------------------------------------------------
+da                               variable   1(local)    double             
+c                                variable   1(local)    double             
+db                               variable   1(local)    double             
+dd                               variable   1(local)    double[8][8]       
+dg                               variable   1(local)    double[1][2]       
+cis                              constant   1(local)    string             123123
+cis2                             constant   1(local)    string             123stringstring
+s2                               constant   1(local)    string             qwe
+cff                              constant   1(local)    double             1000.000000
+cff2                             constant   1(local)    double             0.002000
+s87                              constant   1(local)    float              1.200000
+=======================================================================================
+########## Error at Line#31: symbol b is redeclared ##########
+########## Error at Line#34: symbol s is redeclared ##########
+########## Error at Line#35: symbol c is redeclared ##########
+=======================================================================================
+Name                             Kind       Level       Type               Attribute   
+---------------------------------------------------------------------------------------
+a                                parameter  1(local)    int[1][2]          
+b                                parameter  1(local)    double             
+c                                parameter  1(local)    float[12][34]      
+bbbbb                            parameter  1(local)    bool[1][2][3][4][5]
+s                                parameter  1(local)    string             
+s87                              constant   1(local)    bool               false
+cff2                             constant   1(local)    bool               true
+=======================================================================================
+########## Error at Line#40: symbol main is redeclared ##########
+=======================================================================================
+Name                             Kind       Level       Type               Attribute   
+---------------------------------------------------------------------------------------
+main                             variable   1(local)    float              
+=======================================================================================
+=======================================================================================
+Name                             Kind       Level       Type               Attribute   
+---------------------------------------------------------------------------------------
+asdad                            parameter  1(local)    string[87][88]     
+pp                               constant   1(local)    string             123sdfkjlcxvm,
+=======================================================================================
+########## Error at Line#45: symbol cgggg is redeclared ##########
+=======================================================================================
+Name                             Kind       Level       Type               Attribute   
+---------------------------------------------------------------------------------------
+x                                parameter  1(local)    int                
+q                                parameter  1(local)    string             
+=======================================================================================
+
+|--------------------------------------------------------------------------
+| Error found in Line #51:     return;
+|
+| Unmatched token: ;
+|--------------------------------------------------------------------------

@@ -50,6 +50,11 @@ def get_ans(project_num):
                 {"code": f.read()})
             soup = BeautifulSoup(r.text, 'html.parser')
             ans = soup.find('code').text
+            if project_num == 3:
+                ans = ans.replace(
+                    "Name                             Kind       Level       Type               Attribute               \n",
+                    "Name                             Kind       Level       Type               Attribute   \n"
+                )
 
             with open(os.path.join(ans_dir, file), "w") as f:
                 f.write(ans)
@@ -85,14 +90,42 @@ def check_ans_project2(ans_str, out_str):
         return (False, f'expected "{ans_desc}" but got "{out_desc}" instead')
 
 
+def check_ans_project3(ans_str, out_str):
+    ans_err_line = []
+    ans_stdout = []
+    for line in ans_str.splitlines():
+        match = re.match(r"########## ?Error at Line #(\d*): .*##########", line)
+        if match:
+            ans_err_line.append(int(match.group(1)))
+        else:
+            ans_stdout.append(line)
+    out_err_line = []
+    out_stdout = []
+    for line in out_str.splitlines():
+        match = re.match(r"########## ?Error at Line #(\d*): .*##########", line)
+        if match:
+            out_err_line.append(int(match.group(1)))
+        else:
+            out_stdout.append(line)
+    err_msg = []
+    if ans_stdout != out_stdout:
+        err_msg.append("Some table is incorrect")
+    if ans_err_line != out_err_line:
+        err_msg.append("Some error message is incorrect")
+    if err_msg:
+        return (False, " ".join(err_msg))
+    else:
+        return (True, None)
+
+
 def test():
     ac, wa = 0, 0
     for file in in_files:
         print(file, end="\t")
         r = subprocess.run([args.executable_path,
                             os.path.join(in_dir, file)],
-                            stdout=subprocess.PIPE,
-                            stderr=subprocess.PIPE)
+                           stdout=subprocess.PIPE,
+                           stderr=subprocess.PIPE)
         out_str = r.stdout.decode() + r.stderr.decode()
         with open(os.path.join(out_dir, file), "w") as f:
             f.write(out_str)

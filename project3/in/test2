@@ -1,0 +1,51 @@
+#pragma symbol on
+#pragma token off
+#pragma source off
+#pragma statistic off
+
+int foo(int a[55], float b);
+string foo3(int d);
+double foo5();
+
+
+void  main(){
+ 	string s;
+}
+
+int foo(int a[55], float b){
+	return a[50];
+}
+
+bool foo2(double c[5][100][6]);
+float foo4(bool e, double f, int g);
+
+bool foo2(double c[5][100][6]){
+	return true;
+}
+
+void foo7(int a[12][34][56]){
+
+}
+
+string foo3(int d){
+	return "string";
+}
+
+void foo6();
+
+float foo4(bool e, double f, int g){
+	return 1.0;
+}
+
+double foo5(){
+	double h;
+	return h;
+}
+
+void foo6(){
+	bool i;
+}
+
+int foo8(int an[1], float apple, bool a, int day){
+	return 1;
+}
