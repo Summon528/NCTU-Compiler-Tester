@@ -94,7 +94,7 @@ def check_ans_project3(ans_str, out_str):
     ans_err_line = []
     ans_stdout = []
     for line in ans_str.splitlines():
-        match = re.match(r"########## ?Error at Line #(\d*): .*##########", line)
+        match = re.match(r"########## ?Error at Line ?#(\d*): .*##########", line)
         if match:
             ans_err_line.append(int(match.group(1)))
         else:
@@ -102,7 +102,7 @@ def check_ans_project3(ans_str, out_str):
     out_err_line = []
     out_stdout = []
     for line in out_str.splitlines():
-        match = re.match(r"########## ?Error at Line #(\d*): .*##########", line)
+        match = re.match(r"########## ?Error at Line ?#(\d*): .*##########", line)
         if match:
             out_err_line.append(int(match.group(1)))
         else:

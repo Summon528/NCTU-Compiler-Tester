@@ -92,9 +92,26 @@ Name                             Kind       Level       Type               Attri
 x                                parameter  1(local)    int                
 q                                parameter  1(local)    string             
 =======================================================================================
+=======================================================================================
+Name                             Kind       Level       Type               Attribute   
+---------------------------------------------------------------------------------------
+x                                parameter  1(local)    int                
+=======================================================================================
+=======================================================================================
+Name                             Kind       Level       Type               Attribute   
+---------------------------------------------------------------------------------------
+a                                variable   0(global)   int                
+b                                variable   0(global)   int[1][2][3][4][5] 
+c                                variable   0(global)   int                
+d                                variable   0(global)   int[3][8]          
+main                             function   0(global)   void               int,double[1][6]
+zzz                              function   0(global)   double             int[1][2],double,float[12][34],bool[1][2][3][4][5],string
+cgggg                            function   0(global)   bool               string[87][88]
+testting                         function   0(global)   int                int,string
+dddd                             constant   0(global)   float              8.800000
+ddd                              function   0(global)   void               int
+=======================================================================================
 
-|--------------------------------------------------------------------------
-| Error found in Line #51:     return;
-|
-| Unmatched token: ;
-|--------------------------------------------------------------------------
+|--------------------------------|
+|  There is no syntactic error!  |
+|--------------------------------|

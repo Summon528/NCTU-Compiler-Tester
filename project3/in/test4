@@ -48,5 +48,5 @@ int testting(int x, string q){
 }
 const double dddd = 8.8;
 void ddd(int x) {
-    return;
+    return 1;
 }
