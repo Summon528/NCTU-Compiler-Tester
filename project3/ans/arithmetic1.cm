@@ -1,0 +1,62 @@
+1:#pragma source on
+
+2:#pragma token off
+
+3:#pragma statistic on
+
+4:#pragma symbol on
+
+5:
+
+6:int main()
+
+7:{
+
+8:        int a = 33333334,b, aaaaaaaaaabbbbbbbbbbccccccccccddd;
+
+9:        string c = "I'm Peter;
+
+10:float aaa = 3.20202021;
+
+11:double ggg = 7e-21;
+
+12:bool nice = true;
+
+13:a = 1+1;
+
+14:        a = a+a;
+
+15:        a = a-3*4;
+
+16:        b = a*11;
+
+17:        b = a/b;
+
+18:        a = b/3;
+
+19:        b = 12345 % a;
+
+20:        return 0;
+
+=======================================================================================
+Name                             Kind       Level       Type               Attribute   
+---------------------------------------------------------------------------------------
+a                                variable   1(local)    int                
+b                                variable   1(local)    int                
+aaaaaaaaaabbbbbbbbbbccccccccccdd variable   1(local)    int                
+c                                variable   1(local)    string             
+aaa                              variable   1(local)    float              
+ggg                              variable   1(local)    double             
+nice                             variable   1(local)    bool               
+=======================================================================================
+21:}
+
+=======================================================================================
+Name                             Kind       Level       Type               Attribute   
+---------------------------------------------------------------------------------------
+main                             function   0(global)   int                
+=======================================================================================
+
+|--------------------------------|
+|  There is no syntactic error!  |
+|--------------------------------|

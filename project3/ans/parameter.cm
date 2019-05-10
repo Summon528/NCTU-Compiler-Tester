@@ -1,0 +1,60 @@
+1:#pragma source on
+
+2:#pragma token off
+
+3:#pragma statistic on
+
+4:#pragma symbol on
+
+5:
+
+6:int func(float V1[2][3], int V2);
+
+7:float func2(double V2[3][4], float V3[3]);
+
+8:
+
+9:int main(){
+
+10:  int a;
+
+11:  int b;
+
+12:  int c[4][2][3];
+
+13:  int d[4][3];
+
+14:  float e[2][3][4];
+
+15:  func(a[2],b);
+
+16:  func(c[2],b);
+
+17:  func(c,b);
+
+18:  func2(c,b);
+
+19:  func2(e[1],d[2]);
+
+=======================================================================================
+Name                             Kind       Level       Type               Attribute   
+---------------------------------------------------------------------------------------
+a                                variable   1(local)    int                
+b                                variable   1(local)    int                
+c                                variable   1(local)    int[4][2][3]       
+d                                variable   1(local)    int[4][3]          
+e                                variable   1(local)    float[2][3][4]     
+=======================================================================================
+20:}
+
+=======================================================================================
+Name                             Kind       Level       Type               Attribute   
+---------------------------------------------------------------------------------------
+func                             function   0(global)   int                float[2][3],int
+func2                            function   0(global)   float              double[3][4],float[3]
+main                             function   0(global)   int                
+=======================================================================================
+
+|--------------------------------|
+|  There is no syntactic error!  |
+|--------------------------------|

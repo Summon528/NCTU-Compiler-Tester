@@ -1,0 +1,178 @@
+1:#pragma source on
+
+2:#pragma token off
+
+3:#pragma statistic on
+
+4:#pragma symbol on
+
+5:
+
+6:
+
+7:/*void a(int a, int b){
+
+8:  string c = a + b;
+
+9:  return a;
+
+10:  }
+
+11:
+
+12:  void a(int a, int b){
+
+13:  return a;
+
+14:  }*/
+
+15:
+
+16:/*int v2(int a[2])
+
+17:  {
+
+18:  int c;
+
+19:  int b = a[2];
+
+20:  c = a[2];
+
+21:  c = a;
+
+22:  if(a[1] == 2){
+
+23:  return a[1];
+
+24:  }
+
+25:  return a;
+
+26:  }*/
+
+27:
+
+28:/*
+
+29:   void foo(){
+
+30:   int a[3] = {1,2,3}; // legal
+
+31:   int b[4] = {1,2,3,4,5}; // illegal
+
+32:   int c[2][3] = {1,2,3,4,5,6,7}; // illegal
+
+33:   int d[5] = {1}; // legal
+
+34:   int e = "This is a string"; // illegal
+
+35:   }
+
+36:
+
+37:   int foo(int a[3][3], int b[5][3], int i) {
+
+38:   a[0][0] = i; // legal
+
+39:   i = a[1][1]; // legal
+
+40:   a[0][1] = b[1][2]; // legal
+
+41:   int k;
+
+42:   int k = a[3]; // legal : note that bounds are not checked
+
+43:   string ss = 2.3;
+
+44:   i = 3+a[0]; // illegal : array arithmetic
+
+45:   a = b; // illegal : array assignment
+
+46:   a[1] = b[2]; // illegal : array assignment
+
+47:   return a[0][0]; // legal : 'a[0][0]' is a scalar type, but 'a' is an array type.
+
+48:   }*/
+
+49:
+
+50:/*void f1(float a);
+
+51:void f2(double a[10]);
+
+52:int f3();
+
+53:double f3(int a, float b, double c, int d[10]) {
+
+54:  b = a; // a is converted from int to float
+
+55:  c = a; // a is converted from int to double
+
+56:  c = b; // b is converted from float to double
+
+57:  c = a + b; // a is converted to float before addition,
+
+58:  // which produces a float value that is converted to double.
+
+59:  f1(a); // legal, a is converted from int to float
+
+60:  c = f3(); // legal, the return type int is converted to double
+
+61:  f2(d); // legal, d is converted from an array of 10 int's to an array of 10 double's
+
+62:  a = c; // illegal, a double value cannot be converted to an integer
+
+63:  while (b == c) {} // legal, b is converted to double before comparison
+
+64:    return "sss"; // legal, the return value is implicitly converted to double
+
+65:}*/
+
+66:
+
+67:int main(){
+
+68:  int a;
+
+69:  int b;
+
+70:  bool c[2][3];
+
+71:  if(a){
+
+72:    break;
+
+73:  }
+
+74:  while(c[2]){
+
+75:    break;
+
+76:  }
+
+77:  for(a;a>b;a){
+
+78:    break;
+
+79:  }
+
+80:  continue;
+
+=======================================================================================
+Name                             Kind       Level       Type               Attribute   
+---------------------------------------------------------------------------------------
+a                                variable   1(local)    int                
+b                                variable   1(local)    int                
+c                                variable   1(local)    bool[2][3]         
+=======================================================================================
+81:}
+
+=======================================================================================
+Name                             Kind       Level       Type               Attribute   
+---------------------------------------------------------------------------------------
+main                             function   0(global)   int                
+=======================================================================================
+
+|--------------------------------|
+|  There is no syntactic error!  |
+|--------------------------------|

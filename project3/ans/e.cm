@@ -1,0 +1,62 @@
+1:#pragma source on
+
+2:#pragma token off
+
+3:#pragma statistic on
+
+4:#pragma symbol on
+
+5:
+
+6:
+
+7:int funct(int a[3][4][5]);
+
+8:float f;
+
+9:int g2(int aa[2][3]);
+
+10:void re(float f1[2], int i1);
+
+11:int main()
+
+12:{
+
+13:  return 0;
+
+14:}
+
+15:
+
+16:void re(float f1[2], int i1){
+
+17:    int re1;
+
+18:    float re2[3];
+
+19:    double re3[4];
+
+=======================================================================================
+Name                             Kind       Level       Type               Attribute   
+---------------------------------------------------------------------------------------
+f1                               parameter  1(local)    float[2]           
+i1                               parameter  1(local)    int                
+re1                              variable   1(local)    int                
+re2                              variable   1(local)    float[3]           
+re3                              variable   1(local)    double[4]          
+=======================================================================================
+20:}
+
+=======================================================================================
+Name                             Kind       Level       Type               Attribute   
+---------------------------------------------------------------------------------------
+funct                            function   0(global)   int                int[3][4][5]
+f                                variable   0(global)   float              
+g2                               function   0(global)   int                int[2][3]
+re                               function   0(global)   void               float[2],int
+main                             function   0(global)   int                
+=======================================================================================
+
+|--------------------------------|
+|  There is no syntactic error!  |
+|--------------------------------|

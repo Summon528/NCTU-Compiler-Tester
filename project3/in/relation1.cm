@@ -1,0 +1,18 @@
+#pragma source on
+#pragma token off
+#pragma statistic on
+#pragma symbol on
+
+int main()
+{
+
+        bool a;
+        int b, c;
+
+        a = 1 != 2;
+        a = 101 < 23;
+        a = b == 0;
+        a = c >= b;
+        a = 100 > b;
+        a = 56 <= c;
+}

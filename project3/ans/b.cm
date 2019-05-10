@@ -1,0 +1,129 @@
+1:#pragma source on
+
+2:#pragma token off
+
+3:#pragma statistic on
+
+4:#pragma symbol on
+
+5:
+
+6:
+
+7:string r = "PPPPPPPP;
+
+8:int ggg[3][22][4];
+
+9:int a;
+
+10:float b[2][6];
+
+11:const string ao = "I'ammmmmmmmmm;
+
+12:int funct(int r1[2][3], float r2, string r3);
+
+13:float q[1][4][3], c[2], d[333];
+
+14:float cal(int a[9][3][4], string b, float fg);
+
+15:const int score = 100;
+
+16:
+
+17:void iiiiii();
+
+18:
+
+19:int main(){
+
+20:  string sss;
+
+21:  float asd;
+
+22:  double assd;
+
+23:  const int score = 200;
+
+24:  const float ret = 1.332;
+
+25:  float ggg;
+
+26:  double rr[23][44];
+
+27:  bool ae[7][3];
+
+28:  print a;
+
+29:  print b;
+
+30:  {
+
+31:    const bool pass = true;
+
+32:    float gg[10][10][3][3];
+
+=======================================================================================
+Name                             Kind       Level       Type               Attribute   
+---------------------------------------------------------------------------------------
+pass                             constant   2(local)    bool               true
+gg                               variable   2(local)    float[10][10][3][3]
+=======================================================================================
+33:  }
+
+=======================================================================================
+Name                             Kind       Level       Type               Attribute   
+---------------------------------------------------------------------------------------
+sss                              variable   1(local)    string             
+asd                              variable   1(local)    float              
+assd                             variable   1(local)    double             
+score                            constant   1(local)    int                200
+ret                              constant   1(local)    float              1.332000
+ggg                              variable   1(local)    float              
+rr                               variable   1(local)    double[23][44]     
+ae                               variable   1(local)    bool[7][3]         
+=======================================================================================
+34:}
+
+35:
+
+36:int funct(int tr[2][3], float abc, string rrrr){
+
+37:    int a;
+
+38:    string b;
+
+39:    bool c[2][4];
+
+=======================================================================================
+Name                             Kind       Level       Type               Attribute   
+---------------------------------------------------------------------------------------
+tr                               parameter  1(local)    int[2][3]          
+abc                              parameter  1(local)    float              
+rrrr                             parameter  1(local)    string             
+a                                variable   1(local)    int                
+b                                variable   1(local)    string             
+c                                variable   1(local)    bool[2][4]         
+=======================================================================================
+40:}
+
+=======================================================================================
+Name                             Kind       Level       Type               Attribute   
+---------------------------------------------------------------------------------------
+r                                variable   0(global)   string             
+ggg                              variable   0(global)   int[3][22][4]      
+a                                variable   0(global)   int                
+b                                variable   0(global)   float[2][6]        
+ao                               constant   0(global)   string             I'ammmmmmmmmm
+funct                            function   0(global)   int                int[2][3],float,string
+q                                variable   0(global)   float[1][4][3]     
+c                                variable   0(global)   float[2]           
+d                                variable   0(global)   float[333]         
+cal                              function   0(global)   float              int[9][3][4],string,float
+score                            constant   0(global)   int                100
+iiiiii                           function   0(global)   void               
+main                             function   0(global)   int                
+=======================================================================================
+
+|--------------------------------|
+|  There is no syntactic error!  |
+|--------------------------------|

@@ -1,0 +1,118 @@
+1:#pragma source on
+
+2:#pragma token off
+
+3:#pragma statistic on
+
+4:#pragma symbol on
+
+5:
+
+6:const int i = 4;
+
+7:const float f = 2.45;
+
+8:const string g = "Peter;
+
+9:const bool b = true;
+
+10:bool ans;
+
+11:
+
+12:float ff[2][3];
+
+13:int ii[4][3];
+
+14:const float fff = 3e-4;
+
+15:
+
+16:int main(){
+
+17:  int irr;
+
+18:  float frr;
+
+19:  double drr;
+
+20:  string srr;
+
+21:  bool brr;
+
+22:  ans = false;
+
+23:  //brr = 2 + 3e-4;
+
+24:
+
+25:  i = i%4%g;
+
+26:  i = i%irr+b;
+
+27:  i = i%frr;
+
+28:  i = g%b;
+
+29:
+
+30:  i = 8*(2+3);
+
+31:  irr = -4+5;
+
+32:  //b = b && true;
+
+33:  //b = b && ans || b;
+
+34:  ans = ans || brr && (4+fff);
+
+35:  ans = !b && !g;
+
+36:
+
+37:  irr = -true + -g;
+
+38:
+
+39:  frr = 3.4;
+
+40:  ff = ii;
+
+41:  ii = ff;
+
+42:  ii[2] = ff[3];
+
+43:  ff = ii[3];
+
+44:  ff[2] = ii[3];
+
+45:
+
+=======================================================================================
+Name                             Kind       Level       Type               Attribute   
+---------------------------------------------------------------------------------------
+irr                              variable   1(local)    int                
+frr                              variable   1(local)    float              
+drr                              variable   1(local)    double             
+srr                              variable   1(local)    string             
+brr                              variable   1(local)    bool               
+=======================================================================================
+46:}
+
+=======================================================================================
+Name                             Kind       Level       Type               Attribute   
+---------------------------------------------------------------------------------------
+i                                constant   0(global)   int                4
+f                                constant   0(global)   float              2.450000
+g                                constant   0(global)   string             Peter
+b                                constant   0(global)   bool               true
+ans                              variable   0(global)   bool               
+ff                               variable   0(global)   float[2][3]        
+ii                               variable   0(global)   int[4][3]          
+fff                              constant   0(global)   double             0.000300
+main                             function   0(global)   int                
+=======================================================================================
+
+|--------------------------------|
+|  There is no syntactic error!  |
+|--------------------------------|

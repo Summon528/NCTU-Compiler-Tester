@@ -1,0 +1,13 @@
+#pragma source on
+#pragma token off
+#pragma statistic on
+#pragma symbol on
+
+const int a = 32;
+const string b = "SSS";
+const float c = 3.24;
+
+int main()
+{
+   return 0;
+}

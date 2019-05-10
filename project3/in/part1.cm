@@ -1,0 +1,16 @@
+#pragma source on
+#pragma token off
+#pragma statistic on
+#pragma symbol on
+
+int fun();
+void part1()
+{
+    //bool b, c;
+    int d;
+}
+
+int fun()
+{
+    return 10;
+}

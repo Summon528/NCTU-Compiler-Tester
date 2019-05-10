@@ -1,0 +1,54 @@
+1:#pragma source on
+
+2:#pragma token off
+
+3:#pragma statistic on
+
+4:#pragma symbol on
+
+5:
+
+6:
+
+7:int main()
+
+8:{
+
+9:	int a = 1*2*3/4+(5-1)%2;
+
+########## Error at Line#10: symbol a is redeclared ##########
+10:	bool a = true;
+
+########## Error at Line#11: symbol a is redeclared ##########
+11:	int a = -1;
+
+12:	return 0;
+
+=======================================================================================
+Name                             Kind       Level       Type               Attribute   
+---------------------------------------------------------------------------------------
+a                                variable   1(local)    int                
+=======================================================================================
+13:}
+
+14:float a[5] = {1.1, 2.2, 3.0, 4.0, 7.1};
+
+15:bool b = true;
+
+16:bool d = false;
+
+########## Error at Line#17: symbol a is redeclared ##########
+17:bool a[2][2][2] = { true, false, true, true, false, true, d&&b, d||b};
+
+=======================================================================================
+Name                             Kind       Level       Type               Attribute   
+---------------------------------------------------------------------------------------
+main                             function   0(global)   int                
+a                                variable   0(global)   float[5]           
+b                                variable   0(global)   bool               
+d                                variable   0(global)   bool               
+=======================================================================================
+
+|--------------------------------|
+|  There is no syntactic error!  |
+|--------------------------------|

@@ -1,0 +1,15 @@
+#pragma source on
+#pragma token off
+#pragma statistic on
+#pragma symbol on
+
+int main()
+{
+    int b;
+    bool a;
+    while(a)
+    {
+        for(b = 1; a; b = b+1)  //lose a pair of parentheses
+
+    }
+}

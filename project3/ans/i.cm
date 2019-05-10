@@ -1,0 +1,47 @@
+1:#pragma source on
+
+2:#pragma token off
+
+3:#pragma statistic on
+
+4:#pragma symbol on
+
+5:
+
+6:int func(int a[2], float b);
+
+7:double d1;
+
+8:float f1;
+
+9:int i1[2][2];
+
+10:int main()
+
+11:{
+
+12:  return "sss;
+
+13:  return i1;
+
+14:  return true;
+
+15:  func(i1[1],1.1);
+
+16:  //return f1;
+
+17:}
+
+=======================================================================================
+Name                             Kind       Level       Type               Attribute   
+---------------------------------------------------------------------------------------
+func                             function   0(global)   int                int[2],float
+d1                               variable   0(global)   double             
+f1                               variable   0(global)   float              
+i1                               variable   0(global)   int[2][2]          
+main                             function   0(global)   int                
+=======================================================================================
+
+|--------------------------------|
+|  There is no syntactic error!  |
+|--------------------------------|

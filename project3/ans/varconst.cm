@@ -1,0 +1,126 @@
+1:#pragma source on
+
+2:#pragma token off
+
+3:#pragma statistic on
+
+4:#pragma symbol on
+
+5:
+
+6:int main()
+
+7:{
+
+8:  float fff;
+
+9:  float ffff = 3.4;
+
+10:  const int bbb = 2;
+
+11:  int a = 333;
+
+12:  const int i = true;
+
+13:  const int j = 1.3;
+
+14:  const int k = "sss;
+
+15:  const int l = 5;
+
+16:  const string s1 = "SSS;
+
+17:  const string s2 = "32233;
+
+18:  const string s3 = true;
+
+########## Error at Line#19: symbol a is redeclared ##########
+19:  int a = true;
+
+20:  int b = "SSS;
+
+21:  float c = 3;
+
+22:
+
+23:  //scientific notation
+
+24:  int sc1 = 3e-4;
+
+25:  float sc2 = 3e-4;
+
+26:  double sc3 = 3e-4;
+
+27:  const int sc4 = 3e-4;
+
+28:  const float sc5 = 3e-4;
+
+29:  const double sc6 = 3e-4;
+
+30:
+
+31:
+
+32:
+
+33:  double e;
+
+34:  bool z = 3;
+
+35:  bool y = false;
+
+36:  bool x = "SSS;
+
+37:  d = 2+e ;
+
+38:  d = 2+y;
+
+39:
+
+40:  int aa[2][3];
+
+41:  aa[2] = 4;
+
+42:
+
+43:  l = 4;
+
+=======================================================================================
+Name                             Kind       Level       Type               Attribute   
+---------------------------------------------------------------------------------------
+fff                              variable   1(local)    float              
+ffff                             variable   1(local)    float              
+bbb                              constant   1(local)    int                2
+a                                variable   1(local)    int                
+i                                constant   1(local)    bool               true
+j                                constant   1(local)    float              1.300000
+k                                constant   1(local)    string             sss
+l                                constant   1(local)    int                5
+s1                               constant   1(local)    string             SSS
+s2                               constant   1(local)    string             32233
+s3                               constant   1(local)    bool               true
+b                                variable   1(local)    int                
+c                                variable   1(local)    float              
+sc1                              variable   1(local)    int                
+sc2                              variable   1(local)    float              
+sc3                              variable   1(local)    double             
+sc4                              constant   1(local)    double             0.000300
+sc5                              constant   1(local)    double             0.000300
+sc6                              constant   1(local)    double             0.000300
+e                                variable   1(local)    double             
+z                                variable   1(local)    bool               
+y                                variable   1(local)    bool               
+x                                variable   1(local)    bool               
+aa                               variable   1(local)    int[2][3]          
+=======================================================================================
+44:}
+
+=======================================================================================
+Name                             Kind       Level       Type               Attribute   
+---------------------------------------------------------------------------------------
+main                             function   0(global)   int                
+=======================================================================================
+
+|--------------------------------|
+|  There is no syntactic error!  |
+|--------------------------------|

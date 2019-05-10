@@ -1,0 +1,65 @@
+1:#pragma source on
+
+2:#pragma token off
+
+3:#pragma statistic on
+
+4:#pragma symbol on
+
+5:
+
+6://const bool b1 = (2 > 3);
+
+7:const bool b1 = true;
+
+8:const bool b4 = 3;
+
+9:bool b2;
+
+10:
+
+11:
+
+12:int main(){
+
+13:    bool b3;
+
+14:    b3 = (2>3);
+
+15:    int a;
+
+16:    float b;
+
+17:    if(a>b){
+
+18:      print a;
+
+19:    }
+
+20:    if(a>b1){
+
+21:      print b;
+
+22:    }
+
+=======================================================================================
+Name                             Kind       Level       Type               Attribute   
+---------------------------------------------------------------------------------------
+b3                               variable   1(local)    bool               
+a                                variable   1(local)    int                
+b                                variable   1(local)    float              
+=======================================================================================
+23:}
+
+=======================================================================================
+Name                             Kind       Level       Type               Attribute   
+---------------------------------------------------------------------------------------
+b1                               constant   0(global)   bool               true
+b4                               constant   0(global)   int                3
+b2                               variable   0(global)   bool               
+main                             function   0(global)   int                
+=======================================================================================
+
+|--------------------------------|
+|  There is no syntactic error!  |
+|--------------------------------|

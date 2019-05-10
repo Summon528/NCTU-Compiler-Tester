@@ -1,0 +1,15 @@
+#pragma source on
+#pragma token off
+#pragma statistic on
+#pragma symbol on
+
+void whilefor1()
+{
+    bool a;
+    while(a){
+    }
+
+    do{
+
+    }while(a);
+}
