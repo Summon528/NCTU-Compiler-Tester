@@ -1,0 +1,23 @@
+#pragma source off
+#pragma token off
+#pragma statistic off
+#pragma symbol off
+
+/*
+In an array declaration, the index must be greater than zero.
+For variable or array initializations, the type of the left-hand side must be the same as that of the
+right-hand (after performing type coercion).
+
+For array initializations, the number of initializers should be equal to or less than the array size.
+
+If there are fewer initializers than elements in the array, the remaining elements are automatically
+initialized to 0. For example,
+*/
+
+void foo(){
+    int a = 3.1; // no
+    const int b = 3.1; // no
+    double c = 3.1;
+    const double d = 3.1;
+    const bool e = true, f = false, q = 6; // no
+}

@@ -1,0 +1,20 @@
+#pragma source off
+#pragma token off
+#pragma statistic off
+#pragma symbol off
+
+// For logical operators (&&, ||, or !), the operands must be booleans,
+// and the operation produce a Boolean value.
+
+void v(){}
+double qq() { return 1; }
+bool f() { return true; }
+int main() {
+    bool bb;
+    print f() && true && !false || bb;
+    print !1;
+    print v() && !true;
+    print qq() || bb && true;
+    print qq || bb && true;
+    return 0;
+}

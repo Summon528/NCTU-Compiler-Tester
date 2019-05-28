@@ -1,0 +1,7 @@
+##########Error at Line #15: invalid operands to arithmetic expression ( int and int[3] )##########
+##########Error at Line #16: invalid operands to assignment expression ( int[3][3] and int[5][3] )##########
+##########Error at Line #17: invalid operands to assignment expression ( int[3] and int[3] )##########
+
+|--------------------------------|
+|  There is no syntactic error!  |
+|--------------------------------|

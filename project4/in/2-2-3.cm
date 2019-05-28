@@ -1,0 +1,27 @@
+#pragma source off
+#pragma token off
+#pragma statistic off
+#pragma symbol off
+
+/*
+In an array declaration, the index must be greater than zero.
+For variable or array initializations, the type of the left-hand side must be the same as that of the
+right-hand (after performing type coercion).
+
+For array initializations, the number of initializers should be equal to or less than the array size.
+
+If there are fewer initializers than elements in the array, the remaining elements are automatically
+initialized to 0. For example,
+*/
+
+void foo(){
+    int a[3] = {1,2};
+    int b[1][1] = {1};
+    int c[1][1] = {1.2}; //no
+    double d[1][2] = {1e1, 1.2, 1e3}; //no
+    double e[1][2] = {1e1, 1.2};
+    string f[2] = {"123", "456"};
+    bool g[3][2] = {true, true, 2, true, true}; //no
+    bool h[3][2] = {true, true, true, true, true, true};
+    float j[5][1][1] = {};
+}

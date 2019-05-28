@@ -1,0 +1,8 @@
+##########Error at Line #15: invalid argument type function to read/print statement##########
+##########Error at Line #21: invalid argument type double[5][1] to read/print statement##########
+##########Error at Line #22: invalid argument type double[1] to read/print statement##########
+##########Error at Line #24: invalid argument type double[1] to read/print statement##########
+
+|--------------------------------|
+|  There is no syntactic error!  |
+|--------------------------------|

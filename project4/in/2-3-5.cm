@@ -1,0 +1,28 @@
+#pragma source off
+#pragma token off
+#pragma statistic off
+#pragma symbol off
+
+/*
+For relational operators (<, <=, >=, >, !=, ==), the operands must be integer, float or double
+types, and the operation produces a Boolean value. For equality comparison operators (== or !=),
+they must additionally support booleans as operand types. The operands can also be promoted
+according to the coercion rules defined in Section 2.4.
+*/
+
+void vf(){}
+double df() { return 1; }
+bool bf() { return true; }
+int main() {
+    bool a[3];
+    print bf() == (3 > 1.8);
+    print bf() == 3 > 1.8;
+    print 3 <= 1e9 && true || true != false;
+    print false < true;
+    print 1 < 2 < 3;
+    print true == a[1];
+    print true == a;
+    print 1 >= df();
+    print 1 >= df;
+    return 0;
+}

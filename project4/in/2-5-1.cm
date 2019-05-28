@@ -1,0 +1,34 @@
+#pragma source off
+#pragma token off
+#pragma statistic off
+#pragma symbol off
+
+/*
+The types of the actual parameters must be identical to the formal parameters in the function
+declaration/definition.
+The number of the actual parameters must be identical to the function declaration/definition.
+*/
+
+void f1(){}
+bool bf(bool x, int p) {return true;}
+double go(float a[2][1], double b[1]) { return 1e3; }
+int main() {
+    int i;
+    double d;
+    float f;
+    int arr[3][2][1];
+    bf(true, 3.2); // no
+    bf(false, 3);
+    bf(true, 3, 2.5); // no
+    bf(true); // no
+    bf(f1(), 2); // no
+    bf(f, 3); // no
+    bf(true, -333);
+    bf(bf(bf(true, 3), arr[3][2][1]), -1);
+    f1(2,3,5); //no
+    go(arr[2], arr[1][1]);
+    go(arr[2][2], arr[1]); // no
+    go(arr[2][1][1][0], arr); //no
+    bf(f1, 2); // no
+    return 0;
+}

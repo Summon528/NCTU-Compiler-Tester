@@ -1,0 +1,18 @@
+#pragma source off
+#pragma token off
+#pragma statistic off
+#pragma symbol off
+
+/*
+For array initializations, the number of initializers should be equal to or less than the array size.
+If there are fewer initializers than elements in the array, the remaining elements are automatically
+initialized to 0. For example,
+*/
+
+void foo(){
+    int a[3] = {1,2,3}; // legal
+    int b[4] = {1,2,3,4,5}; // illegal
+    int c[2][3] = {1,2,3,4,5,6,7}; // illegal
+    int d[5] = {1}; // legal
+    int e = "This is a string"; // illegal
+}

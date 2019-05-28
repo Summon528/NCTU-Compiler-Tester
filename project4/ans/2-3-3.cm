@@ -1,0 +1,8 @@
+##########Error at Line #14: invalid operands to mod expression ( int and float )##########
+##########Error at Line #15: invalid operands to mod expression ( double and int )##########
+##########Error at Line #16: invalid operands to mod expression ( int and bool )##########
+##########Error at Line #17: invalid operands to mod expression ( int and function )##########
+
+|--------------------------------|
+|  There is no syntactic error!  |
+|--------------------------------|

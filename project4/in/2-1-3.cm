@@ -1,0 +1,13 @@
+#pragma source off
+#pragma token off
+#pragma statistic off
+#pragma symbol off
+
+// A function can be declared or defined only once.
+void a();
+void a();
+void a() {}
+
+void b();
+void b() {}
+void b() {}

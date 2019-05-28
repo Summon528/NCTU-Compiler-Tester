@@ -1,0 +1,9 @@
+##########Error at Line #17: conflicting types for f##########
+##########Error at Line #20: conflicting types for i##########
+##########Error at Line #20: incompatible return type ( void and int )##########
+##########Error at Line #21: function f declared but not defined##########
+##########Error at Line #21: function i declared but not defined##########
+
+|--------------------------------|
+|  There is no syntactic error!  |
+|--------------------------------|

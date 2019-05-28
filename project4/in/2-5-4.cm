@@ -1,0 +1,27 @@
+#pragma source off
+#pragma token off
+#pragma statistic off
+#pragma symbol off
+
+/*
+  Variable references in print and read statements must be scalar type.
+*/
+
+int f() {
+    bool x;
+    read x;
+    print x && x || x || !x;
+    print 321;
+    print f; // no
+    print f();
+    string s;
+    print s;
+    read s;
+    double a[5][1];
+    read a; // no
+    read a[1]; //no
+    read a[1][1];
+    print a[1]; // no
+    print a[1][1];
+    return 1;
+}

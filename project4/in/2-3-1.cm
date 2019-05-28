@@ -1,0 +1,51 @@
+#pragma source off
+#pragma token off
+#pragma statistic off
+#pragma symbol off
+
+// For arithmetic operators (+, -, *, or /), the operands’ types must be either integer, float or double,
+// and the operation produces an integer, float or double value. The resulted type is the ”most
+// general” type of the two operands. Note that an operand’s type may need to be promoted to
+// match the operand subject to the type coercion rules defined in Section 2.4.
+void f(){}
+int main() {
+    bool b1, b2;
+    int i1, i2;
+    float f1, f2;
+    double d1, d2;
+    string s1, s2;
+    print -b1;
+    print -i1;
+    print -d1;
+    print -s1;
+    print -f();
+    print b1 + b2;
+    print i1 + i2;
+    print d1 + d2;
+    print s1 + s2;
+    print b1 * b2;
+    print i1 * i2;
+    print d1 * d2;
+    print s1 * s2;
+    print b1 / b2;
+    print i1 / i2;
+    print d1 / d2;
+    print s1 / s2;
+    print b1 - b2;
+    print i1 - i2;
+    print d1 - d2;
+    print s1 - s2;
+
+
+    print i1 + f1 * d1 - i1 - f1 / d1 / d1 * f1;
+    print d1 + d2 - i1 + f();
+
+    int ia[10][10];
+    double da[1][2][3];
+    print ia + da;
+    print ia[1][1] + da[1][1];
+    print ia[1][1] + da[1][1][1];
+
+    print f + f;
+    return 0;
+}

@@ -1,0 +1,19 @@
+##########Error at Line #17: invalid argument type bool to unary minus expression##########
+##########Error at Line #20: invalid argument type string to unary minus expression##########
+##########Error at Line #21: invalid argument type void to unary minus expression##########
+##########Error at Line #22: invalid operands to arithmetic expression ( bool and bool )##########
+##########Error at Line #25: invalid operands to arithmetic expression ( string and string )##########
+##########Error at Line #26: invalid operands to arithmetic expression ( bool and bool )##########
+##########Error at Line #29: invalid operands to arithmetic expression ( string and string )##########
+##########Error at Line #30: invalid operands to arithmetic expression ( bool and bool )##########
+##########Error at Line #33: invalid operands to arithmetic expression ( string and string )##########
+##########Error at Line #34: invalid operands to arithmetic expression ( bool and bool )##########
+##########Error at Line #37: invalid operands to arithmetic expression ( string and string )##########
+##########Error at Line #41: invalid operands to arithmetic expression ( double and void )##########
+##########Error at Line #45: invalid operands to arithmetic expression ( int[10][10] and double[1][2][3] )##########
+##########Error at Line #46: invalid operands to arithmetic expression ( int and double[3] )##########
+##########Error at Line #49: invalid operands to arithmetic expression ( function and function )##########
+
+|--------------------------------|
+|  There is no syntactic error!  |
+|--------------------------------|

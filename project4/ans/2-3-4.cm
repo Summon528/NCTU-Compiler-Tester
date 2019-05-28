@@ -1,0 +1,8 @@
+##########Error at Line #15: invalid argument type int to unary not expression##########
+##########Error at Line #16: invalid operands to logical expression ( void and bool )##########
+##########Error at Line #17: invalid operands to logical expression ( double and bool )##########
+##########Error at Line #18: invalid operands to logical expression ( function and bool )##########
+
+|--------------------------------|
+|  There is no syntactic error!  |
+|--------------------------------|

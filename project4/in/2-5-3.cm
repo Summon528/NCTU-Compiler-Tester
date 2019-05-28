@@ -1,0 +1,25 @@
+#pragma source off
+#pragma token off
+#pragma statistic off
+#pragma symbol off
+
+/*
+ A compound statement forms an inner scope. Note that declarations inside a compound statement
+are local to the statements in the block and no longer exist after the block exits.
+*/
+
+int f() {
+    while (true) {
+        int x = 3;
+    }
+    for (;;) {
+        double y;
+    }
+    {
+        bool z;
+    }
+    read x;
+    print x;
+    read z;
+    return y;
+}

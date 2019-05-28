@@ -1,0 +1,19 @@
+#pragma source off
+#pragma token off
+#pragma statistic off
+#pragma symbol off
+
+// For the modulo operator %, both operands must be integers,
+// and the operation produces an integer value.
+
+int f(){ return 1; }
+float d(){ return 1.0; }
+int main() {
+    print f() % 3;
+    print f() % (1+2);
+    print (f()*f()) % (f()*d());
+    print 1e3 % 2;
+    print 1 % true;
+    print (f()*f()) % f;
+    return 0;
+}

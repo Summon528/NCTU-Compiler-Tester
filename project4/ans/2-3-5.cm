@@ -1,0 +1,9 @@
+##########Error at Line #19: invalid operands to equality expression ( bool and int )##########
+##########Error at Line #21: invalid operands to relation expression ( bool and bool )##########
+##########Error at Line #22: invalid operands to relation expression ( bool and int )##########
+##########Error at Line #24: invalid operands to equality expression ( bool and bool[3] )##########
+##########Error at Line #26: invalid operands to relation expression ( int and function )##########
+
+|--------------------------------|
+|  There is no syntactic error!  |
+|--------------------------------|
