@@ -1,0 +1,32 @@
+int gi;
+float gf;
+double gd;
+bool gb;
+
+int main() {
+    gi = 1;
+    gf = 2.3;
+    gd = 4e5;
+    gb = true;
+    print gi;
+    print "\n";
+    print gf;
+    print "\n";
+    print gd;
+    print "\n";
+    print gb;
+    print "\n";
+    gi = 5;
+    gf = 4.3;
+    gd = 2e-1;
+    gb = false;
+    print gi;
+    print "\n";
+    print gf;
+    print "\n";
+    print gd;
+    print "\n";
+    print gb;
+    print "\n";
+    return 0;
+}

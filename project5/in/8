@@ -1,0 +1,28 @@
+int main() {
+   if (42 > 2) {
+      print "1";
+      int x = 3;
+      int y = 5;
+      if (y > x && true) {
+         print "2";
+         bool z = !true;
+         if (z) {
+            print "-1";
+         }
+         print "3";
+         if (1 * 5 != 5) {
+            print "-1";
+         } else {
+            print "4";
+            if (false || 3 == 1 * 2 + 1) {
+               print "5";
+            }
+         }
+      } else {
+         print "-1";
+      }
+   }
+
+   print "end\n";
+   return 0;
+}

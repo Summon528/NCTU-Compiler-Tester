@@ -1,0 +1,9 @@
+int main() {
+   print 1 + 1e2;
+   print "\n";
+   print 1e2 + 1;
+   print "\n";
+   print 1 + 2 - 3;
+   print "\n";
+   return 0;
+}

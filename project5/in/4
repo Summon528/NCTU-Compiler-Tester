@@ -1,0 +1,30 @@
+int main() {
+    int i = 1;
+    print i;
+    print "\n";
+    {
+        int i = 2;
+        print i;
+        print "\n";
+        {
+            int i = 3;
+            print i;
+            print "\n";
+        }
+    }
+    {
+        int i = 4;
+        print i;
+        print "\n";
+        {
+            int i = 5;
+            print i;
+            print "\n";
+        }
+        print i;
+        print "\n";
+    }
+    print i;
+    print "\n";
+    return 0;
+}

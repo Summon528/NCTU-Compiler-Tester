@@ -125,20 +125,41 @@ def check_ans_project4(ans_str, out_str):
         return (False, None)
 
 
+def check_ans_project5(ans_str, out_str):
+    if ans_str == out_str:
+        return (True, None)
+    else:
+        return (False, None)
+
+
 def test():
     ac, wa = 0, 0
     for file in in_files:
         print(file, end="\t")
-        r = subprocess.run([args.executable_path,
+        if args.project_num == 5:
+            subprocess.run([args.executable_path,
                             os.path.join(in_dir, file)],
                            stdout=subprocess.PIPE,
                            stderr=subprocess.PIPE)
+            subprocess.run(["java", "-jar", "jasmin.jar", "output.j"],
+                           stdout=subprocess.PIPE,
+                           stderr=subprocess.PIPE)
+            r = subprocess.run(["java", "output"],
+                               stdout=subprocess.PIPE,
+                               stderr=subprocess.PIPE)
+        else:
+            r = subprocess.run(
+                [args.executable_path,
+                 os.path.join(in_dir, file)],
+                stdout=subprocess.PIPE,
+                stderr=subprocess.PIPE)
         out_str = r.stdout.decode() + r.stderr.decode()
         with open(os.path.join(out_dir, file), "w") as f:
             f.write(out_str)
         with open(os.path.join(ans_dir, file)) as f:
             ans_str = f.read()
-            status, msg = globals()[f"check_ans_{project_str}"](ans_str, out_str)
+            status, msg = globals()[f"check_ans_{project_str}"](ans_str,
+                                                                out_str)
             if status:
                 print(f"\033[92mAC{f': {msg}' if msg else ''}\033[0m")
                 ac += 1

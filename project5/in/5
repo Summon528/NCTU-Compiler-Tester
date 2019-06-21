@@ -1,0 +1,22 @@
+int main() {
+   int a = 3;
+   print a == 3;
+   print "\n";
+   print a >= 4.5;
+   print "\n";
+   print 4.5 > a;
+   print "\n";
+   print 3 < 3;
+   print "\n";
+   print 3 <= a;
+   print "\n";
+   print true && false;
+   print "\n";
+   print true || false;
+   print "\n";
+   print !!!!!true;
+   print "\n";
+   print 5e2 > 2 && 1 == 1 && -5 < 3 || !!!(3 > 2.92);
+   print "\n";
+   return 0;
+}

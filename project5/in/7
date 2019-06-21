@@ -1,0 +1,28 @@
+int main() {
+   bool x = true;
+   if (x) {
+      print "true\n";
+   } else {
+      print "false\n";
+   }
+
+   x = false;
+   if (x) {
+      print "true\n";
+   } else {
+      print "false\n";
+   }
+
+   x= true;
+   if (x) {
+      print "true\n";
+   }
+
+   x = false;
+   if (x) {
+      print "false\n";
+   }
+
+   print "end\n";
+   return 0;
+}

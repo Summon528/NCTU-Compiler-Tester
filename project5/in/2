@@ -1,0 +1,25 @@
+int main() {
+    const string s = "Hello World!";
+    const int a = 1;
+    const float b = 2.0;
+    const double c = 3.333333;
+    const bool d = true;
+    print s;
+    print "\n";
+    print b;
+    print "\n";
+    print c;
+    print "\n";
+    print d;
+    print "\n";
+    print "Good bye world\n";
+    print false;
+    print "\n";
+    print 4e10;
+    print "\n";
+    print 0.5;
+    print "\n";
+    print 6;
+    print "\n";
+    return 0;
+}
