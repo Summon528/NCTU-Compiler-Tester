@@ -1,0 +1,26 @@
+int a();
+int b(int i);
+
+int i;
+
+int main() {
+    int i = 10;
+    print i;
+    print "\n";
+    print a() + b(i + 20);
+    print "\n";
+    return 0;
+}
+
+int a() {
+    i = 20;
+    print i;
+    print "\n";
+    return 20;
+}
+
+int b(int i) {
+    print i;
+    print "\n";
+    return i - 10;
+}
