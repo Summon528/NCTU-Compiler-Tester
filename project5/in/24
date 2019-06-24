@@ -1,0 +1,29 @@
+// test nested loop
+int main() {
+    int i = 0;
+    while (i < 5) {
+        int j, k, l;
+        print "i = ";
+        print i;
+        print "\n";
+        // if i < 2 print j 0 ~ 9 || k > 5 print j 0 ~ 4 || j == k print j 5
+        for (j = 0, k = 10; (j < 10 && i < 2) || k > 5 || !!!(j != k) ; j = j + 1, k = k - 1) {
+            l = i + j;
+            print "j = ";
+            print j;
+            print " k = ";
+            print k;
+            print " l = ";
+            while (l <= 3 && l >= 0) {
+                print l;
+                print " ";
+                l = l - 1;
+            }
+            print "\n";
+        }
+        print "\n";
+        i = i + 1;
+    }
+
+    return 0;
+}
