@@ -144,9 +144,21 @@ def test():
             subprocess.run(["java", "-jar", "jasmin.jar", "output.j"],
                            stdout=subprocess.PIPE,
                            stderr=subprocess.PIPE)
+            
+            stdin_dir = os.path.join(project_str, "stdin")
+            stdin_file = os.path.join(stdin_dir, file)
+            if os.path.exists(stdin_file):
+                _stdin = open(stdin_file)
+            else:
+                _stdin = subprocess.DEVNULL
             r = subprocess.run(["java", "output"],
+                               stdin=_stdin,
                                stdout=subprocess.PIPE,
                                stderr=subprocess.PIPE)
+            try:
+                _stdin.close()
+            except AttributeError:
+                pass
         else:
             r = subprocess.run(
                 [args.executable_path,

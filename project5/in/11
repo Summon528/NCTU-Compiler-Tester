@@ -7,11 +7,11 @@ int main() {
 	float e, f;
 	
 	// read 3 integer and 2 float
-	a = 6;
-	b = 28;
-	c = 496;
-	e = 1.4142;
-	f = 3.1415;
+	read a;
+	read b;
+	read c;
+	read e;
+	read f;
 
 	
 	print "--------------------\n";
