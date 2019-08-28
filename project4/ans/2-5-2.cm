@@ -1,0 +1,11 @@
+##########Error at Line #12: incompatible return type ( int and float )##########
+##########Error at Line #16: conflicting types for q##########
+##########Error at Line #17: incompatible return type ( int and double )##########
+##########Error at Line #23: incompatible return type ( int and int[3] )##########
+##########Error at Line #28: incompatible return type ( void and int )##########
+##########Error at Line #34: incompatible return type ( bool and int )##########
+##########Error at Line #40: function q declared but not defined##########
+
+|--------------------------------|
+|  There is no syntactic error!  |
+|--------------------------------|

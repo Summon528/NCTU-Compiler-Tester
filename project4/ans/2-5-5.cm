@@ -1,0 +1,7 @@
+##########Error at Line #15: conditional expression should be bool type, int given##########
+##########Error at Line #17: conditional expression should be bool type, function given##########
+##########Error at Line #20: conditional expression should be bool type, bool[2] given##########
+
+|--------------------------------|
+|  There is no syntactic error!  |
+|--------------------------------|

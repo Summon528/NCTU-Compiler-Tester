@@ -1,0 +1,14 @@
+##########Error at Line #9: use of undeclared identifier d##########
+##########Error at Line #10: function is not assignable##########
+##########Error at Line #11: function is not assignable##########
+##########Error at Line #28: last statement in function is not a return statement##########
+##########Error at Line #31: invalid operands to arithmetic expression ( bool and bool )##########
+##########Error at Line #32: invalid operands to arithmetic expression ( bool and bool )##########
+##########Error at Line #35: invalid operands to assignment expression ( int and float )##########
+##########Error at Line #35: invalid operands to assignment expression ( int and double )##########
+##########Error at Line #35: invalid operands to assignment expression ( int and string )##########
+##########Error at Line #37: last statement in function is not a return statement##########
+
+|--------------------------------|
+|  There is no syntactic error!  |
+|--------------------------------|

@@ -1,0 +1,37 @@
+#pragma source off
+#pragma token off
+#pragma statistic off
+#pragma symbol off
+
+/* 
+A function’s declaration, if declared, must appear before its definition,
+and the definition must match its declaration. (Once a function is declared,
+it must be defined somewhere after the declaration.)
+*/
+
+int a(int x){ return 1; }
+int a(int x);
+
+int b(int x);
+int b(int x){ return 1; }
+
+int c(int x);
+int c(double x){ return 1; }
+
+int d(int x[3]);
+int d(int x){ return 1; }
+
+int e(int x);
+int e(double x){ return 1; }
+
+int f(int x);
+int f(int x, int y){ return 1; }
+
+int g(int x);
+int g(int y){ return 1; }
+
+int h(int x[1]);
+int h(int x[2]){ return 1; }
+
+int i();
+void z(int y, int a[2]);

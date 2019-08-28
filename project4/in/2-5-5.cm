@@ -1,0 +1,23 @@
+#pragma source off
+#pragma token off
+#pragma statistic off
+#pragma symbol off
+
+/*
+   The conditional expression part of if and while statements must be Boolean types.
+*/
+
+bool a() { return true; }
+
+int f() {
+    bool x[3][2];
+    if (true) {}
+    while(1) {} // no
+    do {} while (1 + 2 > 3);
+    if (a) {} else {} // no
+    if (a()) {}
+    while (a() == false) {}
+    do {} while(x[2]); //no
+    do {} while(x[2][1]);
+    return 0;
+}

@@ -1,0 +1,30 @@
+#pragma source off
+#pragma token off
+#pragma statistic off
+#pragma symbol off
+
+/*
+  A function should be declared or defined before it is invoked. For example,
+*/
+
+void f1();   // declaration of f1
+void f2() {  // definition of f2
+    f1();    // invoke f1
+}
+void f1() {  // definition of f1
+    f2();    // invoke f2
+}
+
+void g0() {  // definition of f0
+    // ...
+}
+void g1() {  // definition of f1
+    // ...
+}
+void g2() {  // definition of f2
+    g1();    // invoke f1
+}
+
+void h2() {  // definition of f2
+    h1();    // invoke f1, error: unknown function h1
+}

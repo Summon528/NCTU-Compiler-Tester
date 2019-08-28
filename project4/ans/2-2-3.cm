@@ -1,0 +1,7 @@
+##########Error at Line #20: incompatible type while initializing c at position 0 ( int and float )##########
+##########Error at Line #21: excess elements in array d initializer##########
+##########Error at Line #24: incompatible type while initializing g at position 2 ( bool and int )##########
+
+|--------------------------------|
+|  There is no syntactic error!  |
+|--------------------------------|

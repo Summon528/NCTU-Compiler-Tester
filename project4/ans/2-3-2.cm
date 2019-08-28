@@ -1,0 +1,10 @@
+##########Error at Line #14: array subscript is not an integer ( float )##########
+##########Error at Line #15: array subscript is not an integer ( double )##########
+##########Error at Line #16: array subscript is not an integer ( bool )##########
+##########Error at Line #18: array subscript is not an integer ( double )##########
+##########Error at Line #19: array subscript is not an integer ( function )##########
+##########Error at Line #20: array subscript is not an integer ( double )##########
+
+|--------------------------------|
+|  There is no syntactic error!  |
+|--------------------------------|

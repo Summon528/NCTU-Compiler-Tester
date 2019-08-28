@@ -1,0 +1,7 @@
+##########Error at Line #14: excess elements in array b initializer##########
+##########Error at Line #15: excess elements in array c initializer##########
+##########Error at Line #17: invalid operands to assignment expression ( int and string )##########
+
+|--------------------------------|
+|  There is no syntactic error!  |
+|--------------------------------|

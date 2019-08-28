@@ -17,7 +17,7 @@ movie                            variable   1(local)    string[8]
 =======================================================================================
 Name                             Kind       Level       Type               Attribute   
 ---------------------------------------------------------------------------------------
-The                              constant   0(global)   int                -1
+The                              constant   0(global)   int                1
 Lord                             constant   0(global)   int                20
 of                               constant   0(global)   bool               true
 rings                            constant   0(global)   bool               false

@@ -1,0 +1,26 @@
+#pragma source off
+#pragma token off
+#pragma statistic off
+#pragma symbol off
+
+/*
+ There are three components of a for loop: initial expression, control expression and increment expression.
+Variables used in the above three component should be declared before the for statement. The
+control expression must be of boolean type.
+
+*/
+
+bool a() { return true; }
+
+int f() {
+    int y;
+    bool x[3][2];
+    for (y = 3, y = 4;true; y =  y + 1) {}
+    for (;;) {}
+    for (;x[1]; y = y + 1) {} //no
+    for (z = 9;;) {} // no
+    for (;!x[3][1] && true;) {}
+    for (;!x[3][1] && !a();) {}
+    for (;a;) {} // no
+    return 0;
+}

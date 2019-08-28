@@ -1,0 +1,15 @@
+##########Error at Line #20: incompatible argument to function bf at position 1 ( int and float )##########
+##########Error at Line #22: incompatible argument count to function bf##########
+##########Error at Line #23: incompatible argument count to function bf##########
+##########Error at Line #24: incompatible argument to function bf at position 0 ( bool and void )##########
+##########Error at Line #25: incompatible argument to function bf at position 0 ( bool and float )##########
+##########Error at Line #28: incompatible argument count to function f1##########
+##########Error at Line #30: incompatible argument to function go at position 0 ( float[2][1] and int[1] )##########
+##########Error at Line #30: incompatible argument to function go at position 1 ( double[1] and int[2][1] )##########
+##########Error at Line #31: subscripted value is not an array ( arr )##########
+##########Error at Line #31: incompatible argument to function go at position 1 ( double[1] and int[3][2][1] )##########
+##########Error at Line #32: incompatible argument to function bf at position 0 ( bool and function )##########
+
+|--------------------------------|
+|  There is no syntactic error!  |
+|--------------------------------|

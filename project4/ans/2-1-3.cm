@@ -1,0 +1,6 @@
+##########Error at Line #8: a redeclared##########
+##########Error at Line #13: redefinition of b##########
+
+|--------------------------------|
+|  There is no syntactic error!  |
+|--------------------------------|

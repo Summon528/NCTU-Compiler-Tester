@@ -118,6 +118,13 @@ def check_ans_project3(ans_str, out_str):
         return (True, None)
 
 
+def check_ans_project4(ans_str, out_str):
+    if ans_str == out_str:
+        return (True, None)
+    else:
+        return (False, None)
+
+
 def test():
     ac, wa = 0, 0
     for file in in_files:

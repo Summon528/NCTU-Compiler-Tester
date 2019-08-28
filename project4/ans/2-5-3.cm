@@ -1,0 +1,8 @@
+##########Error at Line #21: use of undeclared identifier x##########
+##########Error at Line #22: use of undeclared identifier x##########
+##########Error at Line #23: use of undeclared identifier z##########
+##########Error at Line #24: use of undeclared identifier y##########
+
+|--------------------------------|
+|  There is no syntactic error!  |
+|--------------------------------|

@@ -1,0 +1,7 @@
+##########Error at Line #18: invalid operands to assignment expression ( int and float )##########
+##########Error at Line #19: invalid operands to assignment expression ( int and float )##########
+##########Error at Line #22: invalid operands to assignment expression ( bool and int )##########
+
+|--------------------------------|
+|  There is no syntactic error!  |
+|--------------------------------|

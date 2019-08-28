@@ -1,0 +1,7 @@
+#pragma source off
+#pragma token off
+#pragma statistic off
+#pragma symbol off
+
+// There should be at least one function definition existed in the program
+int a = 3;

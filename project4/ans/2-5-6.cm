@@ -1,0 +1,7 @@
+##########Error at Line #20: conditional expression should be bool type, bool[2] given##########
+##########Error at Line #21: use of undeclared identifier z##########
+##########Error at Line #24: conditional expression should be bool type, function given##########
+
+|--------------------------------|
+|  There is no syntactic error!  |
+|--------------------------------|

@@ -1,0 +1,17 @@
+##########Error at Line #13: a redeclared##########
+##########Error at Line #19: conflicting types for c##########
+##########Error at Line #22: conflicting types for d##########
+##########Error at Line #25: conflicting types for e##########
+##########Error at Line #28: conflicting types for f##########
+##########Error at Line #34: conflicting types for h##########
+##########Error at Line #38: function c declared but not defined##########
+##########Error at Line #38: function d declared but not defined##########
+##########Error at Line #38: function e declared but not defined##########
+##########Error at Line #38: function f declared but not defined##########
+##########Error at Line #38: function h declared but not defined##########
+##########Error at Line #38: function i declared but not defined##########
+##########Error at Line #38: function z declared but not defined##########
+
+|--------------------------------|
+|  There is no syntactic error!  |
+|--------------------------------|

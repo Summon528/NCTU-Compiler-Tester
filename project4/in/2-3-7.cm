@@ -1,0 +1,19 @@
+#pragma source off
+#pragma token off
+#pragma statistic off
+#pragma symbol off
+
+/*
+There are no operators that operate on String values, and thus they can only appear in assignment
+operations, variable declarations, print statements, read statements, function arguments, or return
+statements. For example,
+*/
+
+int main(){
+    string a, b;
+    a = "compiler"; // legal
+    b = a; // legal
+    b = b + a; // illegal
+    print a;
+    return 0;
+}

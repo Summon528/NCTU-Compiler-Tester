@@ -3,7 +3,7 @@
 #pragma source off
 #pragma statistic off
 
-const int The=-1, Lord=20;
+const int The=1, Lord=20;
 const bool of=true, rings=false;
 const string tThe="compiler", two="nctu";
 const float towers=2.5;
@@ -16,4 +16,3 @@ void  main(){
 	bool love=true, the[2][95];
 	string bomb, year1964="apple", movie[8];
 }
-

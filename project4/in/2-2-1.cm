@@ -1,0 +1,16 @@
+#pragma source off
+#pragma token off
+#pragma statistic off
+#pragma symbol off
+
+//  Re-assignments to constants are not allowed, and constants cannot be declared in terms of other
+//  named constants.
+
+int main() {
+    const int a = 3;
+    a = 7;
+    for(a = 9; a > 2; a = 4) {
+        print 3;
+    }
+    return 0;
+}

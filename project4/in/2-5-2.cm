@@ -1,0 +1,39 @@
+#pragma source off
+#pragma token off
+#pragma statistic off
+#pragma symbol off
+
+/*
+The type of the return value must be identical to the types of the return type in function
+declaration/definition.
+*/
+
+int f() {
+    return 8.7;
+}
+
+int q();
+double q() {
+    return 1e2;
+}
+
+int k();
+int k() {
+    int a[2][3];
+    return a[1];
+    return a[1][1];
+}
+
+void w() {
+    return 2;
+}
+
+bool qq() {
+    return true;
+    return !true;
+    return 0;
+}
+
+double zz() {
+    return 1 + 3;
+}

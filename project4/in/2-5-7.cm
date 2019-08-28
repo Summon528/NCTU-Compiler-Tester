@@ -1,0 +1,60 @@
+#pragma source off
+#pragma token off
+#pragma statistic off
+#pragma symbol off
+
+/*
+ break and continue can only appear in loop statements.
+*/
+
+int f() {
+    break;
+    while (false) {
+        continue;
+        break;
+        for (;;) {
+            continue;
+            break;
+            do {
+                continue;
+                break;
+            } while (true);
+            continue;
+            break;
+            do {
+                continue;
+                break;
+            } while (true);
+            continue;
+            break;
+        }
+        continue;
+        break;
+    }
+    continue;
+    while (false) {
+        continue;
+        break;
+        for (;;) {
+            continue;
+            break;
+            do {
+                continue;
+                break;
+            } while (true);
+            continue;
+            break;
+            do {
+                continue;
+                break;
+            } while (true);
+            continue;
+            break;
+        }
+        continue;
+        break;
+    }
+    break;
+    continue;
+    return -3;
+}

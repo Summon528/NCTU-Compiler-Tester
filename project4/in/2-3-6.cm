@@ -1,0 +1,19 @@
+#pragma source off
+#pragma token off
+#pragma statistic off
+#pragma symbol off
+
+/*
+ Array can be used in parameter passing. However, array arithmetic and assignment are not allowed.
+*/
+
+int foo(int a[3][3], int b[5][3], int i) {
+    a[0][0] = i;        // legal
+    i = a[1][1];        // legal
+    a[0][1] = b[1][2];  // legal
+    int k = a[3][i];    // legal : note that bounds are not checked
+    i = 3 + a[0];       // illegal : array arithmetic
+    a = b;              // illegal : array assignment
+    a[1] = b[2];        // illegal : array assignment
+    return a[0][0];  // legal : ’a[0][0]’ is a scalar type, but ’a’ is an array type
+}
