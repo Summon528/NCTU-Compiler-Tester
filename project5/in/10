@@ -1,0 +1,19 @@
+double f(int a, double b, float c) {
+   return a + b + c;
+}
+
+void f2(int a, double b, int c, double e) {}
+
+int main() {
+   print f(1, f(1, 2, 3), 3);
+   print "\n";
+   print f(1, 2e1, 3.0);
+   f(1, 2e1, 3.0);
+   print "\n";
+   f2(1, 2e1, 3, 2e1);
+   f2(1, 2, 3, 2);
+   double c = f(1, f(1, 2, 3) + 10 / 2, 3) + f(1, 1, 1);
+   print c;
+   print "\n";
+   return 0;
+}

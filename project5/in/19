@@ -1,0 +1,11 @@
+int main() {
+    int i;
+    bool b;
+    if (true) { i = 3; }
+    print i;
+    if (true) { b = 3; }
+    print "\n";
+    print b;
+    print "\n";
+    return 0;
+}

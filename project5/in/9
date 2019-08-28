@@ -1,0 +1,23 @@
+int main() {
+   int i = 0;
+   while (i < 5) {
+      print i;
+      print "\n";
+      i = i + 1;
+   }
+   print "end1\n";
+   do {
+      print i;
+      print "\n";
+      i = i + 1;
+   } while (i < 10);
+   print "end2\n";
+
+   int j;
+   for (j = 10; j < 15; j = j + 1) {
+      print j;
+      print "\n";
+   }
+   print "end3\n";
+   return 0;
+}

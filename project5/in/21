@@ -1,0 +1,10 @@
+int main() {
+    int i;
+    float j, k = 0.1;
+    double l;
+    
+    print i + j + k + l;
+    print "\n";
+
+    return 0;
+}

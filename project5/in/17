@@ -1,0 +1,29 @@
+
+int gcd( int a, int b )
+{
+    if (a % b != 0) {
+        return gcd(b, a%b);
+    }
+    return b;
+}
+ 
+ 
+int main()
+{
+    int n = 8; 
+	do {
+        read n;
+        int sum = 0, j, i;
+        for (i = 1; i < n; i = i + 1) {
+            for (j = i + 1 ; j <= n ; j = j + 1) {
+                sum = sum + gcd( i, j );
+            }
+        }
+        if (n != 0)
+        {
+            print sum;
+            print "\n";
+        }
+    } while (n != 0);
+	return 0;
+}

@@ -1,0 +1,22 @@
+int main(){
+  int n, f, area, animal, eco, money, j, i;
+  while(true) {
+    read n;
+    if (n == -1) {
+        return 0;
+    }
+    for( i = 0 ; i < n ; i = i + 1 ){
+      money = 0;
+      read f;
+      for( j = 0 ; j < f ; j = j + 1 ){
+        read area;
+        read animal;
+        read eco;
+        money = money + area * eco;
+      }
+      print money;
+      print "\n";
+    }
+  }
+  return 0;
+}
