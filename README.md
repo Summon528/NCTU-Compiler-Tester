@@ -25,7 +25,10 @@ ex:
 python test.py 1 ../project1/scanner
 ```
 
-#### Add new test data
+#### Add new test data (Project 1 ~ 3 Only)
 1. Install `beautifulsoup` and `requests` via `pipenv` or `pip install`
 2. Add new files to `project*/in`
 3. Run the script normally as it will download answers automatically.
+
+#### Note
+Since the output format of project 4 is not strict enough, the result of project 4 needs manual check.
